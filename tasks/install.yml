@@ -6,6 +6,6 @@
     src: "http://packages.confluent.io/archive/{{ confluent_version }}/confluent-{{ confluent_release }}-{{ confluent_scala_version }}.tar.gz"
     dest: "{{ confluent_base }}"
     copy: no
-    creates: "{{ confluent_home }}/bin/kafka-server-start.sh"
+    creates: "{{ confluent_home }}/bin/kafka-server-start"
     owner: "{{ confluent_user }}"
     group: "{{ confluent_group }}"
