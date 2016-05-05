@@ -1,0 +1,19 @@
+---
+#
+- name: prepare confluent group
+  group:
+    name: "{{ confluent_group }}"
+    state: present
+
+- name: prepare confluent user
+  user:
+    name: "{{ confluent_user }}"
+    group: "{{ confluent_group }}"
+    state: present
+
+- name: prepare confluent directory
+  file:
+    path: "{{ confluent_base }}"
+    state: directory
+    owner: "{{ confluent_user }}"
+    group: "{{ confluent_group }}"

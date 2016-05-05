@@ -1,0 +1,10 @@
+---
+- hosts: test01
+
+  roles:
+    - role: confluent-platform
+
+- hosts: test02
+
+  roles:
+    - role: confluent-platform

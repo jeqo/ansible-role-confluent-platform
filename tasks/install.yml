@@ -1,0 +1,11 @@
+---
+#
+- name: unarchive file
+  unarchive:
+  # http://packages.confluent.io/archive/2.0/confluent-2.0.1-2.11.7.tar.gz
+    src: "http://packages.confluent.io/archive/{{ confluent_version }}/confluent-{{ confluent_release }}-{{ confluent_scala_version }}.tar.gz"
+    dest: "{{ confluent_base }}"
+    copy: no
+    creates: "{{ confluent_home }}/bin/kafka-server-start.sh"
+    owner: "{{ confluent_user }}"
+    group: "{{ confluent_group }}"

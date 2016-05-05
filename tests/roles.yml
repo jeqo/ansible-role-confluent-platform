@@ -1,0 +1,4 @@
+
+# Install a role from the Ansible Galaxy
+- src: jeqo.confluent-platform
+  name: confluent-platform
