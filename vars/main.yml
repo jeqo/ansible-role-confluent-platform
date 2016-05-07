@@ -1,7 +1,7 @@
 ---
 # vars file for confluent-platform
 confluent_base: "/opt/confluent"
-confluent_home: "{{ confluent_base }}/confluent_{{ confluent_release }}"
+confluent_home: "{{ confluent_base }}/confluent-{{ confluent_release }}"
 confluent_user: kafka
 confluent_group: kafka
 
