@@ -1,9 +1,12 @@
 ---
 #
+- debug:
+    msg: "confluent platform will be downloaded from: {{ confluent_url }}"
+
 - name: unarchive file
   unarchive:
   # http://packages.confluent.io/archive/2.0/confluent-2.0.1-2.11.7.tar.gz
-    src: "{{ confluent_url}}"
+    src: "{{ confluent_url }}"
     dest: "{{ confluent_base }}"
     copy: no
     creates: "{{ confluent_home }}/bin/kafka-server-start"
