@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # the directory where the snapshot is stored.
-dataDir={{ confluent_zookeeper_data_dir | default(/tmp/zookeeper) }}
+dataDir={{ confluent_zookeeper_data_dir }}
 # the port at which the clients will connect
-clientPort={{ confluent_zookeeper_client_port | default(2181) }}
+clientPort={{ confluent_zookeeper_client_port }}
 # disable the per-ip limit on the number of connections since this is a non-production config
 maxClientCnxns=0
