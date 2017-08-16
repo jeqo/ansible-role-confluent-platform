@@ -1,0 +1,10 @@
+---
+- name: prepare kafka server properties
+  template:
+    src: server.properties.j2
+    dest: "{{ confluent_home }}/etc/kafka/server{{ confluent_kafka_broker_id }}.properties"
+
+- name: prepare zookeeper server properties
+  template:
+    src: zookeeper.properties.j2
+    dest: "{{ confluent_home }}/etc/kafka/zookeeper.properties"

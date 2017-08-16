@@ -1,6 +1,6 @@
 ---
 # defaults file for confluent-platform
 # http://packages.confluent.io/archive/2.0/confluent-2.0.1-2.11.7.tar.gz
-confluent_version: 3.0
-confluent_release: 3.0.0
+confluent_version: 3.3
+confluent_release: 3.3.0
 confluent_scala_version: 2.11

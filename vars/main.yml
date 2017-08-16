@@ -6,3 +6,10 @@ confluent_user: kafka
 confluent_group: kafka
 
 confluent_url: "http://packages.confluent.io/archive/{{ confluent_version }}/confluent-{{ confluent_release }}-{{ confluent_scala_version }}.tar.gz"
+
+confluent_kafka_broker_id: 0
+confluent_kafka_zookeeper_connect: "localhost:2181"
+confluent_kafka_log_dirs: "{{confluent_home}}/kafka-data"
+
+confluent_zookeeper_data_dir: "{{confluent_home}}/zookeeper-data"
+confluent_zookeeper_client_port: 2181
